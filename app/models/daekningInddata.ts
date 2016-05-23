@@ -1,8 +1,8 @@
 
 export enum SamleverStatusEnum {
-    Samgifte,
-    GiftSamlever,
-    Enlig
+    Samgifte = 0,
+    GiftSamlever = 1,
+    Enlig = 2
 };
 
 export enum UdbetalingsTypeEnum {
@@ -57,11 +57,5 @@ export class DaekningInddata {
                     this.flexjobManedsloenUdenPension * this.arbejdsgiverPensionsbidragPct / 100;
             }
         }
-        
-        
-    }
-
-
-
-}
-}
+    };
+};
