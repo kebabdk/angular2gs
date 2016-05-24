@@ -22,6 +22,9 @@
         <input [(ngModel)]="flexjobStart" type="text"/>       
         </label><br>
         <label>Samleverstatus
+      <select>
+        <option *ngFor="#key of samleverEnum" [value]="key" [label]="samleverEnum[key]"></option>
+      </select>
 <!--        <input [(ngModel)]="daekningInddata.samleverStatus" type="text"/-->       
         </label><br>
     Forsikrede: {{forsikrede}} <br>

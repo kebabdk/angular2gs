@@ -29,11 +29,12 @@ System.register(['@angular/core', '@angular/router', '../models/daekningInddata'
                     this.pageTitle = 'Beregning af udbetaling ved flexjob';
                     this.samleverEnum = daekningInddata_1.SamleverStatusEnum;
                     this.daekningInddata = new daekningInddata_1.DaekningInddata();
-                    this.keys = Object.keys(daekningInddata_1.SamleverStatusEnum).filter(Number);
                 }
+                ;
                 FlexjobComponent.prototype.ngOnInit = function () {
                     this.daekningInddata.samleverStatus = daekningInddata_1.SamleverStatusEnum.GiftSamlever;
                 };
+                ;
                 FlexjobComponent = __decorate([
                     core_1.Component({
                         templateUrl: 'app/flexjob/flexjob.component.html',

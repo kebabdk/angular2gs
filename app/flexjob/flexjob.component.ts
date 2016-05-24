@@ -20,16 +20,13 @@ export class FlexjobComponent implements OnInit {
     flexjobStart: number;
     daekningInddata: DaekningInddata;
     samleverEnum = SamleverStatusEnum;
-    keys:[number];
     
-
     constructor() {
-        this.daekningInddata = new DaekningInddata();
-        this.keys = Object.keys(SamleverStatusEnum).filter(Number);
-        
-    }
+        this.daekningInddata = new DaekningInddata();       
+    };
+    
     ngOnInit(): void {
         this.daekningInddata.samleverStatus = SamleverStatusEnum.GiftSamlever;
-    }
+    };
 
 }
