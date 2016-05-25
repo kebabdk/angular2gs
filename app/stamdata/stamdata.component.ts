@@ -24,13 +24,13 @@ export class KeysPipe implements PipeTransform {
   }
 }
 @Component({
-    templateUrl: 'app/flexjob/flexjob.component.html',
+    templateUrl: 'app/stamdata/stamdata.component.html',
     directives: [ROUTER_DIRECTIVES],
     pipes: [KeysPipe]
 })
 
-export class FlexjobComponent implements OnInit {
-    pageTitle: string = 'Beregning af udbetaling ved flexjob';
+export class StamdataComponent implements OnInit {
+    pageTitle: string = 'Stamdata for forsikringstager';
     forsikrede: string;
     cprNr: string;
     forsikringsnummer: string;
@@ -38,6 +38,7 @@ export class FlexjobComponent implements OnInit {
     sygemeldtFra: Date;
     flexjobStart: number;
     daekningInddata: DaekningInddata;
+
     samleverEnum = SamleverStatusEnum;
     udbetalingsTypeEnum = UdbetalingsTypeEnum;
     
@@ -46,6 +47,7 @@ export class FlexjobComponent implements OnInit {
     };
     
     ngOnInit(): void {
+        this.daekningInddata.udbetalingsType = UdbetalingsTypeEnum.HelVedHel;
         this.daekningInddata.samleverStatus = SamleverStatusEnum.GiftSamlever;
     };
 

@@ -11,7 +11,7 @@ System.register(['@angular/core', '@angular/router', '../models/daekningInddata'
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1, daekningInddata_1;
-    var KeysPipe, FlexjobComponent;
+    var KeysPipe, StamdataComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -45,30 +45,31 @@ System.register(['@angular/core', '@angular/router', '../models/daekningInddata'
                 return KeysPipe;
             }());
             exports_1("KeysPipe", KeysPipe);
-            FlexjobComponent = (function () {
-                function FlexjobComponent() {
-                    this.pageTitle = 'Beregning af udbetaling ved flexjob';
+            StamdataComponent = (function () {
+                function StamdataComponent() {
+                    this.pageTitle = 'Stamdata for forsikringstager';
                     this.samleverEnum = daekningInddata_1.SamleverStatusEnum;
                     this.udbetalingsTypeEnum = daekningInddata_1.UdbetalingsTypeEnum;
                     this.daekningInddata = new daekningInddata_1.DaekningInddata();
                 }
                 ;
-                FlexjobComponent.prototype.ngOnInit = function () {
+                StamdataComponent.prototype.ngOnInit = function () {
+                    this.daekningInddata.udbetalingsType = daekningInddata_1.UdbetalingsTypeEnum.HelVedHel;
                     this.daekningInddata.samleverStatus = daekningInddata_1.SamleverStatusEnum.GiftSamlever;
                 };
                 ;
-                FlexjobComponent = __decorate([
+                StamdataComponent = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/flexjob/flexjob.component.html',
+                        templateUrl: 'app/stamdata/stamdata.component.html',
                         directives: [router_1.ROUTER_DIRECTIVES],
                         pipes: [KeysPipe]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], FlexjobComponent);
-                return FlexjobComponent;
+                ], StamdataComponent);
+                return StamdataComponent;
             }());
-            exports_1("FlexjobComponent", FlexjobComponent);
+            exports_1("StamdataComponent", StamdataComponent);
         }
     }
 });
-//# sourceMappingURL=flexjob.component.js.map
+//# sourceMappingURL=stamdata.component.js.map

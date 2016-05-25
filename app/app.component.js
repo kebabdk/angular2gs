@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/http', 'rxjs/Rx', '@angular/router', './products/product-list.component', './products/product.service', './home/welcome.component', './products/product-detail.component', './flexjob/flexjob.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/http', 'rxjs/Rx', '@angular/router', './products/product-list.component', './products/product.service', './home/welcome.component', './products/product-detail.component', './flexjob/flexjob.component', './stamdata/stamdata.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Rx', '@angular/router',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, router_1, product_list_component_1, product_service_1, welcome_component_1, product_detail_component_1, flexjob_component_1;
+    var core_1, http_1, router_1, product_list_component_1, product_service_1, welcome_component_1, product_detail_component_1, flexjob_component_1, stamdata_component_1;
     var AppComponent;
     return {
         setters:[
@@ -38,6 +38,9 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Rx', '@angular/router',
             },
             function (flexjob_component_1_1) {
                 flexjob_component_1 = flexjob_component_1_1;
+            },
+            function (stamdata_component_1_1) {
+                stamdata_component_1 = stamdata_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -47,7 +50,7 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Rx', '@angular/router',
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'pm-app',
-                        template: "\n    <div>\n        <nav class='navbar navbar-default'>\n            <div class='container-fluid'>\n                <a class='navbar-brand'>{{pageTitle}}</a>\n                <ul class='nav navbar-nav'>\n                    <li><a [routerLink]=\"['/welcome']\">Home</a></li>\n                    <li><a [routerLink]=\"['/products']\">Product List</a></li>\n                    <li><a [routerLink]=\"['/flexjob']\">Flexjob beregning</a></li>\n                </ul>\n            </div>\n        </nav>\n        <div class='container'>\n            <router-outlet></router-outlet>\n        </div>\n     </div>\n     ",
+                        template: "\n    <div>\n        <nav class='navbar navbar-default'>\n            <div class='container-fluid'>\n                <a class='navbar-brand'>{{pageTitle}}</a>\n                <ul class='nav navbar-nav'>\n                    <li><a [routerLink]=\"['/welcome']\">Home</a></li>\n                    <li><a [routerLink]=\"['/products']\">Product List</a></li>\n                    <li><a [routerLink]=\"['/stamdata']\">Stamdata</a></li>\n                    <li><a [routerLink]=\"['/flexjob']\">Flexjob beregning</a></li>\n                </ul>\n            </div>\n        </nav>\n        <div class='container'>\n            <router-outlet></router-outlet>\n        </div>\n     </div>\n     ",
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [product_service_1.ProductService,
                             http_1.HTTP_PROVIDERS,
@@ -58,7 +61,8 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Rx', '@angular/router',
                         { path: '/welcome', component: welcome_component_1.WelcomeComponent },
                         { path: '/products', component: product_list_component_1.ProductListComponent },
                         { path: '/product/:id', component: product_detail_component_1.ProductDetailComponent },
-                        { path: '/flexjob', component: flexjob_component_1.FlexjobComponent }
+                        { path: '/flexjob', component: flexjob_component_1.FlexjobComponent },
+                        { path: '/stamdata', component: stamdata_component_1.StamdataComponent }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

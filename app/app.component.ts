@@ -9,6 +9,7 @@ import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailComponent } from './products/product-detail.component';
 
 import { FlexjobComponent} from './flexjob/flexjob.component';
+import { StamdataComponent} from './stamdata/stamdata.component';
 
 @Component({
     selector: 'pm-app',
@@ -20,6 +21,7 @@ import { FlexjobComponent} from './flexjob/flexjob.component';
                 <ul class='nav navbar-nav'>
                     <li><a [routerLink]="['/welcome']">Home</a></li>
                     <li><a [routerLink]="['/products']">Product List</a></li>
+                    <li><a [routerLink]="['/stamdata']">Stamdata</a></li>
                     <li><a [routerLink]="['/flexjob']">Flexjob beregning</a></li>
                 </ul>
             </div>
@@ -39,7 +41,8 @@ import { FlexjobComponent} from './flexjob/flexjob.component';
     { path: '/welcome', component: WelcomeComponent },
     { path: '/products', component: ProductListComponent },
     { path: '/product/:id', component: ProductDetailComponent },
-    { path: '/flexjob', component:  FlexjobComponent }
+    { path: '/flexjob', component:  FlexjobComponent },
+    { path: '/stamdata', component:  StamdataComponent }
 ])
 export class AppComponent {
     pageTitle: string = 'Acme Product Management';
