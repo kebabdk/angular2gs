@@ -8,7 +8,7 @@ export enum SamleverStatusEnum {
 export enum UdbetalingsTypeEnum {
     HelVedHel,
     HalvVedHalv,
-    HelvVed2_3
+    HelVed2_3
 };
 
 export class DaekningInddata {

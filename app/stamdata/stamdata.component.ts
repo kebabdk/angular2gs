@@ -36,7 +36,7 @@ export class StamdataComponent implements OnInit {
     forsikringsnummer: string;
     forsikringsDato: Date;
     sygemeldtFra: Date;
-    flexjobStart: number;
+    flexjobStart: Date;
     daekningInddata: DaekningInddata;
 
     samleverEnum = SamleverStatusEnum;

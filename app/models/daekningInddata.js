@@ -15,7 +15,7 @@ System.register([], function(exports_1, context_1) {
             (function (UdbetalingsTypeEnum) {
                 UdbetalingsTypeEnum[UdbetalingsTypeEnum["HelVedHel"] = 0] = "HelVedHel";
                 UdbetalingsTypeEnum[UdbetalingsTypeEnum["HalvVedHalv"] = 1] = "HalvVedHalv";
-                UdbetalingsTypeEnum[UdbetalingsTypeEnum["HelvVed2_3"] = 2] = "HelvVed2_3";
+                UdbetalingsTypeEnum[UdbetalingsTypeEnum["HelVed2_3"] = 2] = "HelVed2_3";
             })(UdbetalingsTypeEnum || (UdbetalingsTypeEnum = {}));
             exports_1("UdbetalingsTypeEnum", UdbetalingsTypeEnum);
             ;
